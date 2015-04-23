@@ -19,4 +19,8 @@ describe("Float#coin_combinations") do
       expect(0.99.coin_combinations()).to(eq([4, 0, 2, 3]))
   end
 
+  it("Accepts any input of whole dollar/cent combination") do
+      expect(2.99.coin_combinations()).to(eq([4, 0, 2, 11]))
+  end
+
 end
