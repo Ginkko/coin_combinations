@@ -15,4 +15,8 @@ describe("Float#coin_combinations") do
       expect(0.24.coin_combinations()).to(eq([4, 0, 2, 0]))
   end
 
+  it("For input values > $0.24, coin_combinations returns the same value in quarters, dimes, nickels, and pennies") do
+      expect(0.99.coin_combinations()).to(eq([4, 0, 2, 3]))
+  end
+
 end
